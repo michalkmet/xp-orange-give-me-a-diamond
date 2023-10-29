@@ -40,4 +40,4 @@ Pomodoro 1:
 - ✅ DONE Initial refactor
 - ✅ DONE add project description
 - ✅ DONE examples
-- ⚠ TODO User stories & UATs
+- ✅ DONE User stories & UATs
