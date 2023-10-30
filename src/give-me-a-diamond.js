@@ -1,4 +1,7 @@
-function diamond() {
+function diamond(inputNumber) {
+  if (inputNumber === 1) {
+    return '*';
+  }
   return null;
 }
 
