@@ -49,3 +49,11 @@ As a user, I want to see null and one diamond for negative or small numbers
 - ✅ DONE UAT1.2: When I pass 0, then I should see null
 - ✅ DONE UAT1.3: When I pass 1, then I should see *
 - ✅ DONE UAT1.4: When I pass 2, then I should see null
+
+Story2: number 3+
+As a user, I want to see a diamonds for bigger odd numbers 
+- ✅ DONE UAT2.1: When I pass 3, then I should see " *\n***\n *\n"
+- ⚠ TODO UAT2.2: When I pass 4, then I should see null
+- ⚠ TODO UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
+- ⚠ TODO UAT2.4: When I pass 6, then I should see null
+- ⚠ TODO UAT2.5: When I pass 7, then I should see "   *\n   ***\n *****\n*******\n *****\n  ***\n  *\n"

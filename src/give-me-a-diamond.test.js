@@ -14,3 +14,9 @@ describe('Story1: negative + small numbers', () => {
     expect(diamond(2)).toBe(null);
   });
 });
+
+describe('Story2: number 3+', () => {
+  it('UAT2.1: When I pass 3, then I should see " *\n***\n *\n"', () => {
+    expect(diamond(3)).toBe(' *\n***\n *\n');
+  });
+});
