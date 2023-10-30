@@ -1,5 +1,5 @@
 function diamond() {
-  return 'hello';
+  return null;
 }
 
 module.exports = diamond;
