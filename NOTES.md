@@ -54,6 +54,6 @@ As a user, I want to see null and one diamond for negative or small numbers
 As a user, I want to see a diamonds for bigger odd numbers 
 - ✅ DONE UAT2.1: When I pass 3, then I should see " *\n***\n *\n"
 - ✅ DONE UAT2.2: When I pass 4, then I should see null
-- ⚠ TODO UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
+- 🚧 IN PROGRESS UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
 - ⚠ TODO UAT2.4: When I pass 6, then I should see null
 - ⚠ TODO UAT2.5: When I pass 7, then I should see "   *\n   ***\n *****\n*******\n *****\n  ***\n  *\n"
