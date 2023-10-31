@@ -25,4 +25,7 @@ describe('Story2: number 3+', () => {
   it('UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"', () => {
     expect(diamond(5)).toBe('  *\n ***\n*****\n ***\n  *\n');
   });
+  it('UAT2.4: When I pass 6, then I should see null', () => {
+    expect(diamond(6)).toBe(null);
+  });
 });
