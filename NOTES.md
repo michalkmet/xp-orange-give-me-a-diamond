@@ -58,5 +58,9 @@ As a user, I want to see a diamonds for bigger odd numbers
 
 Pomodoro 3:
 - 🚧 IN PROGRESS UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
+
+
+Pomodoro 4:
+- ✅ DONE UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
 - ⚠ TODO UAT2.4: When I pass 6, then I should see null
 - ⚠ TODO UAT2.5: When I pass 7, then I should see "   *\n   ***\n *****\n*******\n *****\n  ***\n  *\n"

@@ -7,6 +7,7 @@ function diamond(inputNumber) {
 }
 
 function createDiamond(inputNumber) {
+  
   let result = '';
   if (inputNumber === 1) {
     result = '*';
@@ -28,20 +29,34 @@ function createDiamond(inputNumber) {
         result += '*';
         result += '\n';
       } else { // between the first and last
-        
-        if (i % 2 != 0) {
-          
+        // create line with *
+        if (i <= levels) {
+          for (let j = 1; j <= levels -1; j++) {
+            result += ' ';
+          }
+          for (let l = 1; l <= levels + 1; l++) {
+            result += '*';
+          }
+          result += '\n';
+        } else if (i === levels + 1) {
+          for (let m = 1; m <= inputNumber; m++) {
+            result += '*';
+          }
+          result += '\n';
+        } else {
+          for (let n = 1; n <= levels -1 ; n++) {
+            result += ' ';
+          }
+          for (let o = 1; o <= levels + 1; o++) {
+            result += '*';
+          }
+          result += '\n';
         }
-        
-        for (let l = 1; l <= inputNumber; l++) {
-          result += '*';
-        }
-        result += '\n';
       }
-
     }
   }
-  console.log('result: ', result);
+  console.log('result: ');
+  console.log(result);
   return result;
 }
 module.exports = diamond;
