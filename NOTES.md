@@ -63,4 +63,6 @@ Pomodoro 3:
 Pomodoro 4:
 - ✅ DONE UAT2.3: When I pass 5, then I should see "  *\n ***\n*****\n ***\n  *\n"
 - ✅ DONE UAT2.4: When I pass 6, then I should see null
-- ⚠ TODO UAT2.5: When I pass 7, then I should see "   *\n   ***\n *****\n*******\n *****\n  ***\n  *\n"
+
+Pomodoro 5:
+- 🚧 IN PROGRESS UAT2.5: When I pass 7, then I should see "   *\n   ***\n *****\n*******\n *****\n  ***\n  *\n"

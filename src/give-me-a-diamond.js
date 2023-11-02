@@ -13,46 +13,33 @@ function createDiamond(inputNumber) {
     result = '*';
   } else {
     let levels = (inputNumber - 1) / 2;
+    let spacesLength = levels;
     console.log('levels: ', levels);
+    console.log('spacesLength: ', spacesLength);
     for (let i = 1; i <= inputNumber; i++) {
+      let multiplicator = i % 2 === 0 ? i + 1 : i;
       console.log('i: ', i);
-      if (i === 1) { // first line
-        for (let j = 1; j <= levels; j++) {
+      if (i <= levels) { // first rows till middle row
+        result += ' '.repeat(spacesLength);
+
+        result += '*'.repeat(multiplicator);
+        result += '\n';
+        spacesLength--;
+      } else if (i === levels + 1) { // middle row
+        for (let m = 1; m <= inputNumber; m++) {
+          result += '*';
+        }
+        result += '\n';
+      } else { // after middle row
+        for (let n = 1; n <= levels - 1 ; n++) {
           result += ' ';
         }
-        result += '*';
-        result += '\n';
-      } else if (i === inputNumber) { // last line
-        for (let k = 1; k <= levels; k++) {
-          result += ' ';
+        for (let o = 1; o <= levels + 1; o++) {
+          result += '*';
         }
-        result += '*';
         result += '\n';
-      } else { // between the first and last
-        // create line with *
-        if (i <= levels) {
-          for (let j = 1; j <= levels -1; j++) {
-            result += ' ';
-          }
-          for (let l = 1; l <= levels + 1; l++) {
-            result += '*';
-          }
-          result += '\n';
-        } else if (i === levels + 1) {
-          for (let m = 1; m <= inputNumber; m++) {
-            result += '*';
-          }
-          result += '\n';
-        } else {
-          for (let n = 1; n <= levels -1 ; n++) {
-            result += ' ';
-          }
-          for (let o = 1; o <= levels + 1; o++) {
-            result += '*';
-          }
-          result += '\n';
-        }
       }
+      
     }
   }
   console.log('result: ');
