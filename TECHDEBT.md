@@ -1,3 +1,3 @@
 # Techdebt
 
-- Refactor createDiamond() function 
+- ✅ DONE Refactor createDiamond() function 
