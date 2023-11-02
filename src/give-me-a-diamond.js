@@ -17,25 +17,28 @@ function createDiamond(inputNumber) {
     let j = 0;
     for (let i = 1; i <= inputNumber; i++) {
       if (i <= levels) {
-        result += ' '.repeat(spacesLength);
-        result += '*'.repeat(steps[i - 1]);
-        result += '\n';
+        result += drawLine(spacesLength, steps[i - 1]);
         spacesLength--;
       } else if (i === levels + 1) {
-        result += '*'.repeat(inputNumber);
-        result += '\n';
+        result += drawLine(0, inputNumber);
         spacesLength = 1;
         steps = steps.reverse();
       } else {
-        result += ' '.repeat(spacesLength);
-        result += '*'.repeat(steps[j]);
-        result += '\n';
+        result += drawLine(spacesLength, steps[j]);
         spacesLength++;
         j++;
       }
     }
   }
   return result;
+}
+
+function drawLine(spacesLength, starsCount) {
+  let str = '';
+  str += ' '.repeat(spacesLength);
+  str += '*'.repeat(starsCount);
+  str += '\n';
+  return str;
 }
 
 function createSteps(inputNumber) {
