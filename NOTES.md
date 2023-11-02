@@ -47,7 +47,7 @@ Story1: negative + small numbers
 As a user, I want to see null and one diamond for negative or small numbers
 - ✅ DONE UAT1.1: When I pass -1, then I should see null
 - ✅ DONE UAT1.2: When I pass 0, then I should see null
-- ✅ DONE UAT1.3: When I pass 1, then I should see *
+- ✅ DONE UAT1.3: When I pass 1, then I should see *\n
 - ✅ DONE UAT1.4: When I pass 2, then I should see null
 
 - 🚧 IN PROGRESS Story2: number 3+

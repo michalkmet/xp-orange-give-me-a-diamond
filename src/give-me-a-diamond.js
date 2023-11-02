@@ -9,7 +9,7 @@ function diamond(inputNumber) {
 function createDiamond(inputNumber) {
   let result = '';
   if (inputNumber === 1) {
-    result = '*';
+    result = '*\n';
   } else {
     let levels = (inputNumber - 1) / 2;
     let spacesLength = levels;
